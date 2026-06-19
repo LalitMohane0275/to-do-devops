@@ -4,7 +4,7 @@ const createTodo = async (req, res) => {
   try {
     const { title } = req.body;
 
-    if (!title) {
+    if (!title || !title.trim()) {
       return res.status(400).json({
         success: false,
         message: "Title is required",
