@@ -1,7 +1,8 @@
 import axios from "axios";
+const BASE_URL = import.meta.env.BASE_URL || "http://localhost:3000";
 
 const api = axios.create({
-  baseURL: "http://3.27.142.161:3000/api/todos",
+  baseURL: `${BASE_URL}/api/todos`,
 });
 
 export const getTodos = async () => {
