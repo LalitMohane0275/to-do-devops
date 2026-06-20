@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:3000/api/todos",
+  baseURL: "http://3.27.142.161:3000/api/todos",
 });
 
 export const getTodos = async () => {
